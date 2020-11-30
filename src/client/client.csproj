@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Version>0.0.10</Version>
+    <AssemblyName>ivy.remote-config.client</AssemblyName>
+    <RootNamespace>ivy</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration) == 'Debug'">
+    <BumpPatch>true</BumpPatch>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="3.0.0" />
+    <PackageReference Include="Ivy.Versioning" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+</Project>
