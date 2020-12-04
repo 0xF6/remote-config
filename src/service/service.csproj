@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <AssemblyName>ivy.remote-config.service</AssemblyName>
+    <RootNamespace>ivy</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration) == 'Debug'">
+    <BumpPatch>true</BumpPatch>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ivy.aspnetcore.middleware.searchbot" Version="1.0.11" />
+    <PackageReference Include="Ivy.Versioning" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.0" />
+  </ItemGroup>
+</Project>
